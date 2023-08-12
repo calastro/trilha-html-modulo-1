@@ -2,61 +2,299 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+    <h1 id="menu"><font color="red">Módulo 1 - Primeiros Passos com  HTML</font></h1>
+    <hr />
+    </width><img src="https://img.freepik.com/fotos-gratis/sistema-html-para-o-conceito-de-sites_23-2150323524.jpg?w=1060&t=st=1691849707~exp=1691850307~hmac=84713967b13498c4a6c8690aaaa6243245f0eb411f9b266631532b1e8cfd0445" width="600">
+    <ol>
+        <li>
+            <a href="#historia">História dos computadores.</a>
+        </li>
+        <li>
+            <a href="#clientxserver">O que são <i>Clients</i>?</a>
+        </li>
+        <li>
+            <a href="#clientxserver">O que são <i>Servers</i>?</a>
+        </li>
+        <li>
+            <a href="#html">Como é uma estrutura básica de um <abbr title="HyperText Markup Language">HTML</abbr>?</a>
+        </li>
+        <li>
+           <a href="#listas"> Entendendo a diferença entre listas ordenadas e não ordenadas.</a>
+        </li>
+        <li>
+            <a href="#referencias">Links de referências.</a>
+        </li>
+    </ol>
+    <img src="https://img.freepik.com/vetores-gratis/cursos-para-desenvolvedores-web-programacao-de-computadores-web-design-script-e-estudo-de-codificacao-componentes-da-estrutura-da-interface-de-aprendizagem-do-aluno-de-ciencia-da-computacao_335657-1161.jpg?w=740&t=st=1691849870~exp=1691850470~hmac=cf8d06a4a6c5749fe6fe98a874e1320537975d2b221997fd6b63868473f104c7" width="550">
+    <hr />
+    <h2 id="historia">
+        1-História dos computadores
+    </h2>
+    <p>
+        <strong>Primeira geração (1940-1956):</strong> Os computadores da primeira geração eram <u>grandes e caros</u>, feitos com válvulas eletrônicas e consumiam muita energia. Alguns exemplos incluem o <mark>ENIAC (1946) e o UNIVAC I (1951)</mark>. 
+    </p>
+     <p>
+        <strong>Segunda geração (1956-1963):</strong> Os computadores da segunda geração foram feitos com <u>transistores</u>, que eram menores e mais eficientes do que as válvulas eletrônicas. Isso permitiu que os computadores fossem menores, mais baratos e consumissem menos energia. Alguns exemplos incluem o <mark>IBM 7090 (1956) e o CDC 1604 (1960)</mark>.  
+    </p>
+    <p>
+        <strong>Terceira geração (1964-1971):</strong> Os computadores da terceira geração foram feitos com <u>circuitos integrados</u>, que são conjuntos de transistores soldados em uma única placa de circuito. Isso permitiu que os computadores fossem ainda menores, mais baratos e consumissem ainda menos energia. Alguns exemplos incluem o <mark>IBM 360 (1964) e o DEC PDP-11 (1970)</mark>.
+    </p>
+    <p>
+        <strong>Quarta geração (1971-presente):</strong> Os computadores da quarta geração são feitos com <u>microprocessadores</u>, que são circuitos integrados que incluem um processador de dados, memória e outros componentes. Isso permitiu que os computadores fossem ainda menores, mais baratos e consumissem ainda menos energia. Alguns exemplos incluem o <mark>Apple I (1976) e o IBM PC (1981)</mark>.
+    </p>
+    <blockquote>
+        <i>
+            Nos últimos anos, os computadores têm se tornado cada vez mais poderosos e compactos. Hoje, os computadores estão presentes em todos os aspectos da nossa vida, desde o  trabalho até o lazer.
+        </i>
+    </blockquote>
+    <p>
+        Alguns links abaixo para você que possui mais curiosidade nesse tema:
+    </p>
+    <ul>
+        <li>
+            <a href="https://pt.wikipedia.org/wiki/Hist%C3%B3ria_da_computa%C3%A7%C3%A3o" target="_blank">
+            História da computação - Wikipédia
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=uQuYPRYVPiM" target="_blank">
+            Breve História do Computador - YouTube
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linknacional.com.br/blog/historia-do-computador/" target="_blank">
+            História do computador e a revolução tecnológica - Link Nacional
+            </a>
+        </li>
+    </ul>
+    <small><a href="#menu">Voltar ao menu</a></small>
+    <hr />
+    
+    <h2 id="clientxserver">
+        2 <sup>e</sup> 3 - Clients <sub>x</sub> Servers      
+    </h2>
+    <p>
+        Um cliente é um dispositivo ou programa que <mark>solicita serviços</mark> de um servidor. Um servidor é um dispositivo ou programa que <mark>fornece serviços</mark> a clientes.
+    </p>
+    <p>
+        Em um sistema cliente-servidor, os clientes solicitam serviços ao servidor e o servidor responde às solicitações. Os clientes e o servidor podem estar <mark>localizados</mark> no <u>mesmo computador ou em computadores diferentes</u> em uma rede.
+    </p>
+
+    <p>
+        Os clientes podem ser usados para uma variedade de tarefas, incluindo acessar arquivos, imprimir documentos, enviar e-mail, navegar na web e jogar jogos. Os servidores podem ser usados para uma variedade de tarefas, incluindo fornecer armazenamento de arquivos, processamento de dados, hospedagem de sites e gerenciamento de redes.
+    </p>
+
+    <p>
+        Alguns <u>exemplos</u> de clientes incluem navegadores da web, clientes de e-mail, clientes de jogos e clientes de escritório. Alguns exemplos de servidores incluem servidores de arquivos, servidores de impressão, servidores de e-mail, servidores web e servidores de banco de dados.
+    </p>
+
+    <p>
+        <blockquote><i>O modelo cliente-servidor é uma maneira eficiente e eficaz de compartilhar recursos e fornecer serviços. Ele permite que clientes e servidores se comuniquem uns com os outros de forma independente e sem a necessidade de conhecimento ou intervenção mútua.</i></blockquote>
+    </p>
+    <p>
+        Alguns links abaixo para você que possui mais curiosidade nesse tema:
+    </p>
+    <ul>
+        <li>
+            <a href="https://www.ultra64.com.br/o-que-sao-e-quais-as-diferencas-entre-cliente-e-servidor/" target="_blank">
+                O que são e quais as diferenças entre Cliente e Servidor? - Ultra 64
+            </a>
+        </li>
+        <li>
+            <a href="https://conceito.de/cliente-servidor" target="_blank">
+                Cliente-servidor - O que é, conceito e definição.
+            </a>
+        </li>
+    </ul>
+    <small><a href="#menu">Voltar ao menu</a></small>
     <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <h2 id="html">
+        4 - Como é uma estrutura básica de um HTML?        
+    </h2>
+    <p>
+        Um documento HTML é como as instruções para construir uma página da web. Imagine que você está construindo uma casa de blocos de construção - o HTML é como o plano que diz como os blocos devem ser colocados juntos. Aqui está um resumo bem simples da estrutura básica de um documento HTML:
+    </p>
+        <p>
+        <mark>DOCTYPE Declaration (Declaração de Tipo de Documento):</mark>
+    </p>
+        <p>
+        Essa é a primeira linha e define o tipo de documento como HTML. Ela ajuda os navegadores a entender como interpretar o código.
+    </p>
+        <p> 
+            <mark>(Etiqueta HTML):</mark>
+    </p>
+        <p>
+        É o contêiner principal do documento HTML.
+        Contém duas partes principais: a cabeça (&lt;head&gt;) e o corpo (&lt;body&gt;) da página.
+    </p>
+        <p>
+            <mark>Head Section (Seção de Cabeça):</mark>
+    </p>
+        <p>
+        Contém informações sobre o documento, como o título da página (que aparece na aba do navegador) e metadados (informações sobre o documento, como idioma e codificação de caracteres).
+    </p>
+        <p>
+        <mark>Title Tag (Etiqueta de Título):</mark>
+    </p>
+        <p>
+        Colocada dentro da seção de cabeça.
+        Define o título da página exibido no navegador.
+    </p>
+        <p>
+        <mark>Body Section (Seção de Corpo):</mark>
+    </p>
+        <p>
+        Contém o conteúdo visível da página.
+        Aqui você adiciona textos, imagens, vídeos e outros elementos.
+    </p>
+        <p>
+        <mark>Heading Tags (Etiquetas de Título):</mark>
+    </p>
+        <p>
+        São usadas para criar títulos e subtítulos.
+        Vão de <u>&lt;h1&gt;</u> (maior e mais importante) até <u>&lt;h6&gt;</u> (menor e menos importante).
+    </p>
+        <p>
+        <mark>Paragraph Tags (Etiquetas de Parágrafo):</mark>
+    </p>
+        <p>
+        Usadas para criar blocos de texto.
+        Iniciam com <u>&lt;p&gt;</u> e terminam com <u>&lt;/p&gt;</u>.
+    </p>
+        <p>
+        <mark>Hyperlinks (Hiperlinks):</mark>
+    </p>
+        <p>
+        Criados usando a etiqueta <u>&lt;a&gt;</u>.
+        Permitem que os usuários cliquem em um texto para ir para outra página ou recurso.
+    </p>
+        <p>
+        <mark>Images (Imagens):</mark>
+    </p>
+        <p>
+        Inseridas com a etiqueta <u>&lt;img&gt;</u>.
+        Mostram imagens na página.
+    </p>
+        <p>
+        <mark>Lists (Listas):</mark>
+    </p>
+        <p>
+        Usadas para criar listas de itens.
+        Podem ser não ordenadas <u>(&lt;ul&gt;)</u> ou ordenadas<u> (&lt;ol&gt;)</u>>.
+    </p>
+        <p>   
+        <mark>Input Fields (Campos de Entrada):</mark>
+    </p>
+        <p>
+        Parte de um formulário, como caixas de texto, botões de rádio e caixas de seleção.
+    </p>
+        <p>
+        <mark>Tags Várias:</mark>
+    </p>
+        <p>
+        Existem muitas outras etiquetas para diferentes propósitos, como tabelas <u>(&lt;table&gt;)</u>, divs <u>(&lt;div&gt;)</u>, estilos <u>(&lt;style&gt;)</u>, scripts <u>(&lt;script&gt;)</u>, entre outras.
+    </p>
+    <p>
+        Alguns links abaixo para você que possui mais curiosidade e queira se aprofundar nesse tema:
+    </p>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+        <li>
+            <a href="https://developer.mozilla.org/pt-BR/docs/learn/getting_started_with_the_web/html_basics" target="_blank">
+                HTML básico - Aprendendo desenvolvimento web | MDN.
+            </a>
+        </li>
+        <li>
+            <a href="https://www.homehost.com.br/blog/tutoriais/html-basico/" target="_blank">
+                HTML Básico: iniciando no desenvolvimento web com HTML.
+            </a>
+        </li>
     </ul>
+    <small><a href="#menu">Voltar ao menu</a></small>
+    <hr />
+    
+    <h2 id="listas">
+        5 - Entendendo a diferença entre listas ordenadas e não ordenadas.
+    </h2>
+    
+    <!-- Verifiquei que está muito ruim colocar várias tags de parágrafo, então decidi pesquisar e verifiquei que tem uma tag de quebra de linha que facilita o uso, então mesmo não tendo aprendido no curso, irei utilizar para facilitar a montagem do HTML!-->
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>
+Listas <mark>Ordenadas:</mark>
+<br>
+Imagine que você está fazendo uma lista de tarefas importantes. Uma lista ordenada é como escrever essas tarefas em uma ordem específica, começando com o número 1 e continuando em ordem numérica. Cada item tem seu próprio número para mostrar a posição dele na lista. É como seguir passos para fazer alguma coisa.
+<br>
+Exemplo:
+<ol>
+    <li>Acordar cedo</li>
+    <li>Tomar café da manhã</li>
+    <li>Ir para o trabalho
+    </li>
+</ol>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+Listas <mark> Não Ordenadas:</mark>
+<br>
+Agora, imagine que você está anotando ideias legais para um projeto, mas a ordem em que você as escreve não importa. Uma lista não ordenada é como pegar essas ideias e colocá-las na página sem números ou ordem específica. Cada item é precedido por um símbolo, geralmente um ponto preto.
+<br>
+Exemplo:
+<ul>
+    <li>Ideia para o design do site</li>
+    <li>Cores criativas para a logo</li>
+    <li>Possíveis recursos legais</li>
+</ul>
+Resumindo:
+<br>
+Listas Ordenadas: São como passos em ordem, numerados de forma sequencial.
+<br>
+Listas Não Ordenadas: São como ideias soltas, sem uma ordem específica, geralmente marcadas com pontos ou símbolos.
+<br>
+Assim, você pode escolher qual tipo de lista usar com base na organização que faz mais sentido para o que você está escrevendo!
+    </p>
+    <p>
+        Alguns links abaixo para você que possui mais curiosidade e queira se aprofundar nesse tema:
+    </p>
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+        <li>
+            <a href="https://www.luis.blog.br/listas-ordenadas-nao-ordenadas-e-de-definicao.html" target="_blank">
+                O que são listas ordenadas, não ordenadas e de definição em HTML?
+            </a>
+        </li>
+        <li>
+            <a href="http://www.nce.ufrj.br/ginape/cursohtml/conteudo/listas/ordenada.htm" target="_blank">
+                Lista ordenada e lista não-ordenada - UFRJ.
+            </a>
+        </li>
     </ul>
+    <small><a href="#menu">Voltar ao menu</a></small>
+    <hr />
+    
+    <h2 id="referencias">
+        6 -  Links de referências.
+    </h2>
+        <p>
+            Usei esses links para aprender e explicar o conteúdo apresentado nessa página:
+            <ul>
+                <li>
+                <a href="https://www.dio.me/" target="_blank">
+                    Curso que estou realizando atualmente: DIO.ME
+                </a>
+            </li>
+                <li>
+                    <a href="https://www.w3schools.com/html/" target="_blank">
+                    W3 School
+                </a>
+            </li>
+            </ul>
+
+        </p>
+        
+<small><a href="#menu">Voltar ao menu</a></small>
+<img src="https://img.freepik.com/fotos-gratis/sistema-html-para-o-conceito-de-sites_23-2150323534.jpg?w=1060&t=st=1691856709~exp=1691857309~hmac=14a37886eaf6ac511efbe4048a0ff8724120d77be47d117a3b647703b500722f" width="500">
+    <hr />
 
 </body>
 </html>
